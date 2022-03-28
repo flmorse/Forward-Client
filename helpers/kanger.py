@@ -33,7 +33,7 @@ async def Kanger(c: Client, m: Message):
             return 400
     await asyncio.sleep(2)
     await m.edit(text="Trying to Forward Now ...")
-    async for message in c.iter_history(chat_id=Config.FORWARD_FROM_CHAT_ID[0], reverse=True):
+    async for message in c.iter_history(chat_id=Config.FORWARD_FROM_CHAT_ID[0], reverse=True, offset_id=Config.START_MSG_ID):
         await asyncio.sleep(Config.SLEEP_TIME)
         try:
             try_forward = await ForwardMessage(c, message)
