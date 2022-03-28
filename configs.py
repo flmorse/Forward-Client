@@ -5,6 +5,9 @@ import heroku3
 
 
 class Config(object):
+    # Start Message ID
+    START_MSG_ID = int(os.environ.get("START_MSG_ID"))
+    
     # Get This From @TeleORG_Bot
     API_ID = int(os.environ.get("API_ID"))
     API_HASH = os.environ.get("API_HASH")
