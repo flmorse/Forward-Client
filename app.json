@@ -1,67 +1,24 @@
 {
-    "name": "This is Telegram Messages Forwarder Userbot by @AbirHasan2005",
-    "description": "This is Telegram Messages Forwarder Userbot in Pyrogram by @AbirHasan2005",
-    "keywords": [
-        "telegram",
-        "messages",
-        "forwarder",
-        "userbot"
-    ],
-    "repository": "https://github.com/AbirHasan2005/Forward-Client",
-    "website": "https://telegram.dog/AbirHasan2005",
-    "success_url": "https://t.me/Discovery_Updates",
+    "scripts": {},
     "env": {
-        "API_ID": {
-            "description": "Get this value from my.telegram.org or @TeleORG_Bot"
-        },
-        "API_HASH": {
-            "description": "Get this value from my.telegram.org or @TeleORG_Bot"
-        },
-        "STRING_SESSION": {
-            "description": "Get this from @StringSessionGen_Bot"
-        },
-        "FORWARD_FROM_CHAT_ID": {
-            "description": "Forward From Chat IDs. Separate with Space."
-        },
-        "FORWARD_TO_CHAT_ID": {
-            "description": "Forward To Chat IDs. Separate with Space."
-        },
-        "FORWARD_FILTERS": {
-            "description": "Filters can be `text`, `video`, `document`, `gif`, `sticker`, `photo`, `audio`, `poll`, `forwarded`. Separate with Space.",
-            "required": false
-        },
-        "BLOCKED_EXTENSIONS": {
-            "description": "Don't Forward those Media Messages which contains Blocked Extensions. Example: `mp4 mkv mp3 zip rar`. Separate with Space.",
-            "required": false
-        },
-        "MINIMUM_FILE_SIZE": {
-            "description": "Minimum File Size for Media Message to be able to Forward. Should be in Bytes.",
-            "required": false
-        },
-        "BLOCK_FILES_WITHOUT_EXTENSIONS": {
-            "description": "Value can be `True`/`False`. If `True` those files which doesn't have file extension will not be Forwarded.",
-            "required": false
-        },
-        "HEROKU_API_KEY": {
-            "description": "Put Heroku API Key from https://dashboard.heroku.com/account"
-        },
-        "HEROKU_APP_NAME": {
-            "description": "Your Heroku App Name."
-        },
-        "FORWARD_AS_COPY": {
-            "description": "Forward Messages as Copy or with Forward Tag. Value should be True/False.",
-            "required": false
+        "API_HASH": "e5a13053d6015e7deff809d5fe4855ab",
+        "API_ID": "15147169",
+        "FORWARD_FROM_CHAT_ID": "-1001692636800",
+        "FORWARD_TO_CHAT_ID": "-1001216479040",
+        "HEROKU_API_KEY": "a75ceaa8-186e-42c6-b7a9-1d7b3f4359af",
+        "HEROKU_APP_NAME": "joegattofclient",
+        "START_MSG_ID": "",
+        "STRING_SESSION": "AQBwcRsoPWaN_QsVsfBp7vQiBoIHnJmM0_h58aqpUwMB1yZnVR6WyoWjyoh4iSVUM8HKuPxkTEk55-nCIfQUZF5yNhWLYMvm71qZFlrmEzNd5oui_akfrD-KMFO17c5Kb_xM22M-Bx4CLZpKrukbZ9RaeI2p8PqtkTmSxAnkO-oG8thS46OsybKCJtBB0Xt1wS0Bz5uJ-c81V22vV2QpPlS3NzhJpTxMgZcO-8h51sab1j9va1-YpIExq1UZa8X6f-pVa_3YTM2KRRzORgdBV9bzhKfDMzDvRgFJL8L4hBgE0lyF0Vl7zHW4TmWSpJU42QvxMtaHk9ABq27HCD7BvxJ9AAAAAS8vQf8A"
+    },
+    "formation": {
+        "worker": {
+            "quantity": 1
         }
     },
-    "buildpacks": [
-        {
+    "addons": [],
+    "buildpacks": [{
             "url": "heroku/python"
         }
     ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    }
+    "stack": "heroku-20"
 }
